@@ -41,7 +41,7 @@ erDiagram
         Name foreignKey
         Position string
         Date string 
-        ShiftStartTime string 
-        ShiftEndTime string 
+        StartTime string 
+        EndTime string 
     }
 ```
