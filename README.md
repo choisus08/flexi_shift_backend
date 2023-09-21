@@ -7,7 +7,8 @@ Flexi Shift is an app that conveniently helps employers and employees schedule i
 </br>
 
 ## Link
-[**Deployment**](DEPLOYMENT LINK)
+[**Github**](https://github.com/choisus08/flexi_shift_backend)
+[**Deployment**](https://flexi-shift-backend.onrender.com/shifts/)
 </br>
 
 ## Technologies Used
