@@ -46,8 +46,28 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'shifts.apps.ShiftsConfig',
     'rest_framework',
+    'rest_framework_jwt',
     'corsheaders'
+    
 ]
+
+
+# Add DRF's authentication classes
+REST_FRAMEWORK = {
+    'DEFAULT_AUTHENTICATION_CLASSES': (
+        'rest_framework_jwt.authentication.JSONWebTokenAuthentication',
+    ),
+}
+
+# JWT settings
+JWT_AUTH = {
+    'JWT_SECRET_KEY': 'djangoauth',  # Replace with a secret key (keep it secret!)
+    'JWT_ALGORITHM': 'HS256',  # Algorithm to encode/decode JWTs
+    'JWT_ALLOW_REFRESH': True,
+    'JWT_EXPIRATION_DELTA': timedelta(hours=1),  # Token expiration time
+    'JWT_REFRESH_EXPIRATION_DELTA': timedelta(days=7),  # Token refresh time
+}
+
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
