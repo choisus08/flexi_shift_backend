@@ -7,8 +7,8 @@ Flexi Shift is a full CRUD app that conveniently helps employers and employees s
 </br>
 
 ## Link
-[**Github**](https://github.com/choisus08/flexi_shift_backend)
-[**Deployment**](https://flexi-shift-backend.onrender.com/shifts/)
+- [**Github**](https://github.com/choisus08/flexi_shift_backend)
+- [**Deployment**](https://flexi-shift-backend.onrender.com/shifts/)
 </br>
 
 ## Technologies Used
