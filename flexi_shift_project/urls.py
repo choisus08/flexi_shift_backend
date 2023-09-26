@@ -19,7 +19,7 @@ from django.urls import path, include
 from rest_framework import routers
 from shifts.views import ShiftViewSet
 
-from . import views
+from shifts.userviews import 
 
 ## Create a new router
 router = routers.DefaultRouter()

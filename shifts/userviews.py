@@ -1,21 +1,8 @@
-from .models import Shift
-# from rest_framework import viewsets, permissions, status
-from .serializers import ShiftSerializer
-
-# from rest_framework.decorators import api_view, permission_classes
-# from rest_framework.response import Response
-# from rest_framework.permissions import AllowAny
-# from django.contrib.auth import authenticate, login, logout
-
-# Create your views here.
-
-class ShiftViewSet(viewsets.ModelViewSet):
-    # queryset is a list of all Shift objects
-    queryset = Shift.objects.all()
-    # serializer_class attribute is used to control which serializer class should be used for serializing & deserializing queryset & model instances
-    serializer_class = ShiftSerializer
-    # set permission_classes to allow unrestricted access to the api
-    permission_classes = [permissions.AllowAny]
+from rest_framework.decorators import api_view, permission_classes
+from rest_framework.response import Response
+from rest_framework.permissions import AllowAny
+from django.contrib.auth import authenticate, login, logout
+from rest_framework import viewsets, permissions, status
 
 
 @api_view(['POST'])
