@@ -19,6 +19,8 @@ from django.urls import path, include
 from rest_framework import routers
 from shifts.views import ShiftViewSet
 
+from . import views
+
 ## Create a new router
 router = routers.DefaultRouter()
 ## Register our viewsets
